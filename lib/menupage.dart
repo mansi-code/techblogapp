@@ -17,7 +17,10 @@ class menupage extends StatelessWidget {
             Center(
               child: Text(
                 'Choose an option',
-                style: TextStyle(fontSize: 53, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontSize: 53,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Poppins'),
               ),
             ),
             SizedBox(
