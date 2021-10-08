@@ -13,17 +13,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('TechBlog'),
-        ),
-      ),
       initialRoute: 'menupage',
       routes: {
         'menupage': (context) => menupage(),
         'scholarships': (context) => scholarships(),
         'technews': (context) => technews(),
       },
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('TechBlog'),
+        ),
+      ),
     );
   }
 }

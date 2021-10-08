@@ -49,15 +49,11 @@ class technews extends StatelessWidget {
             style: TextStyle(
               fontSize: 53,
               fontWeight: FontWeight.bold,
+              fontFamily: 'Poppins',
             ),
           ),
           SizedBox(
-            height: 30,
-          ),
-          Divider(
             height: 20,
-            thickness: 5,
-            color: Colors.grey,
           ),
 
           Expanded(
@@ -72,8 +68,10 @@ class technews extends StatelessWidget {
                     //leading: FlutterLogo(size: 56.0),
                     title: Text(
                       newstitle[index],
-                      style:
-                          TextStyle(fontSize: 33, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 33,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'Newsreader'),
                     ),
                     subtitle: Text(
                       newsauthor[index],

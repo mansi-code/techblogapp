@@ -59,6 +59,19 @@ flutter:
   uses-material-design: true
   assets:
     - images/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins/Poppins-Bold.ttf
+        - asset: fonts/Poppins/Poppins-Regular.ttf
+
+    - family: Newsreader
+      fonts:
+        - asset: fonts/Newsreader/Newsreader-Italic-VariableFont_opsz,wght.ttf
+        - asset: fonts/Newsreader/Newsreader-VariableFont_opsz,wght.ttf
+
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
 
   # To add assets to your application, add an assets section, like this:
   # assets:
