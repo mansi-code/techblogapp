@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -12,9 +11,9 @@ class scholarships extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: SafeArea(
-      child: Column(
+      child: ListView(
         //crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
+        children: <Widget>[
           SizedBox(
             height: 20,
           ),
@@ -119,6 +118,45 @@ class scholarships extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Divider(
+            height: 20,
+            thickness: 5,
+            color: Colors.grey,
+          ),
+
+          //--------------------------------------------------------------
+          GestureDetector(
+            onTap: () {
+              const url1 =
+                  'https://www.iie.org/en/Programs/WeTech/STEM-Scholarships-for-Women/Juniper-Networks-Scholarship-and-Internship';
+              _launchURL(url1);
+            },
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Text(
+                  'Juniper Networks Scholarship and Internship',
+                  style: TextStyle(fontSize: 33, fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  'Through WeTech, Juniper Networks is investing in building the global pipeline of women in STEM by providing scholarships to current female STEM students in India, Europe, and the United States. Scholarship recipients also complete an internship at a Juniper Networks global office in gaining real-world experience and exposure to a leading multinational technology company.',
+                  style: TextStyle(fontSize: 20),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Divider(
+            height: 20,
+            thickness: 5,
+            color: Colors.grey,
           ),
         ],
       ),
